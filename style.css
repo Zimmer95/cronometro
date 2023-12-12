@@ -1,0 +1,9 @@
+section{
+    background-color: brown;
+    min-height: 100vh;
+}
+
+.cronometro{
+    font-size: 100px;
+    color: white;
+}

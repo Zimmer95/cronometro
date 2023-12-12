@@ -3,15 +3,15 @@
 
 
     let tiempoRef = Date.now()
-    let iniciarCronometro = false
+    let iniciarCronometro = true
     let acumulado = 0
 
     setInterval(()=> {
-        let cronometro = document.getElementById("cronometro")
-        if(iniciarCronometro){   
+        let cronometro = document.getElementById("#cronometro")
+        if(iniciarCronometro){
             acumulado = Date.now - tiempoRef
         }
-        cronometro.innerHTML = acumulado
+        #cronometro.innerHTML = acumulado
 
     }, 1000/60);  
     
@@ -25,7 +25,7 @@
             return (this+"").padStart(n,0)
         }
 
-        return H.ceros(2)+":"+ M.ceros(2)+":"+H.ceros(2)
+        return H.ceros(2)+":"+ M.ceros(2)+":"+ S.ceros(2);
 
     }
 
